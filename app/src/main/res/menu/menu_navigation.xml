@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_casa"
+        android:title="Início"
+        android:fontFamily="@font/comfortaa"/>
+    <item
+        android:id="@+id/meu"
+        android:icon="@drawable/ic_baseline_dashboard"
+        android:title="Meus Eventos" />
+    <item
+        android:id="@+id/criar"
+        android:icon="@drawable/ic_baseline_adiciona"
+        android:title="Criar Evento" />
+  <!--  <item
+        android:id="@+id/part"
+        android:icon="@drawable/ic_baseline_listace"
+        android:title="Participando" />
+        -->
+    <item
+        android:id="@+id/perfill"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Perfil" />
+
+
+</menu>

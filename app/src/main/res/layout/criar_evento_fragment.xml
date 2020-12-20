@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.AmazonEvent.EventoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Crie o seu Evento!"
+            android:textColor="#278EDF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:scrollX="20dp"
+            android:text="TÍTULO"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/nome"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="CATEGORIA"
+            android:textSize="15sp"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/categoria"
+            app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/categoria"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="LOCAL"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/local"
+            app:layout_constraintTop_toBottomOf="@+id/categoria" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/local"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/endereco"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="ENDEREÇO"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/endereco"
+            app:layout_constraintTop_toBottomOf="@+id/categoria" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/endereco"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/local"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="DATA"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/data"
+            app:layout_constraintTop_toBottomOf="@+id/local" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="HORA"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.616"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/endereco" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/data"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/comfortaa"
+            android:hint="dd/mm/aa"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/horaup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btnData"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="2dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_calen"
+            app:layout_constraintBottom_toBottomOf="@+id/data"
+            app:layout_constraintEnd_toEndOf="@+id/data"
+            app:layout_constraintTop_toTopOf="@+id/data" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/horaup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/comfortaa"
+            android:hint="H:M"
+            android:inputType="time"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/data"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageButton
+            android:id="@+id/btnHora"
+            android:layout_width="30dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="2dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_baseline_timer"
+            app:layout_constraintBottom_toBottomOf="@+id/horaup"
+            app:layout_constraintEnd_toEndOf="@+id/horaup"
+            app:layout_constraintTop_toTopOf="@+id/horaup" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/comfortaa"
+            android:gravity="top"
+            android:hint="Descrição"
+            android:inputType="textMultiLine"
+            android:maxLines="100"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/selecionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:text="+ adicionar imagem"
+            android:textColor="#1A769F"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/salva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/btnev"
+            android:fontFamily="@font/comfortaa"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Publicar "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selecionar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="257dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="257dp"
+                android:layout_height="135dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#C3C2C2"
+                android:backgroundTintMode="src_over"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

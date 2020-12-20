@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.AmazonEvent.ParticipandoFrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listview3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campoPesquisa3"
+            app:layout_constraintVertical_bias="1.0"
+            app:reverseLayout="false" />
+
+        <Button
+            android:id="@+id/btnPesquisa3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_bg"
+            android:foreground="@drawable/ic_buscaa"
+            android:foregroundTint="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/campoPesquisa3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/campoPesquisa3"
+            />
+
+        <Button
+            android:id="@+id/btnCancela3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_close_menor"
+            android:foregroundTint="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/campoPesquisa3"
+            app:layout_constraintEnd_toEndOf="@+id/campoPesquisa3"
+            app:layout_constraintTop_toTopOf="@+id/campoPesquisa3" />
+
+        <EditText
+            android:id="@+id/campoPesquisa3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_border"
+            android:backgroundTint="#34AFACAC"
+            android:drawableStart="@drawable/ic_buscaa"
+            android:drawablePadding="5dp"
+            android:drawableTint="#B5393636"
+            android:ems="10"
+            android:fontFamily="@font/comfortaa"
+            android:hint="Pesquisar..."
+            android:inputType="textCapSentences"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnPesquisa3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
