@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1069017930507",
+    "firebase_url": "https://testes-940dc.firebaseio.com",
+    "project_id": "testes-940dc",
+    "storage_bucket": "testes-940dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069017930507:android:daf24d9d4b86c7b2f3600e",
+        "android_client_info": {
+          "package_name": "com.AmazonEvent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069017930507-1cmmuibqe7ivoutsrlr8s2jgts81rt5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoofkvjC_dQnFW_CKyZDRXqfFiPsfAgp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069017930507-1cmmuibqe7ivoutsrlr8s2jgts81rt5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
